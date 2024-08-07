@@ -34,3 +34,7 @@ begin
 create trigger employee_audit_trg after insert on 
 employee for each row execute procedure emp_audit_log();
 
+#step 6 insert a data and check:
+
+INSERT INTO employee (first_name, last_name, email) VALUES
+('Jsssohn', 'ddDoe', 'xxjohn.doe@example.com');
